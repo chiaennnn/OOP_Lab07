@@ -10,7 +10,7 @@ using namespace std ;
 
 double Cylinder :: SurfaceArea(){ 
     double circle = 2*M_PI*radius*radius ;
-    double rec = M_PI*height*2*radius ;
+    double rec = M_PI*height*2*radius ;   
     return (circle+rec) ;
 }
 
