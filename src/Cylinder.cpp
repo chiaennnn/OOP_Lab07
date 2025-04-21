@@ -9,19 +9,19 @@
 using namespace std ;
 
 double Cylinder :: SurfaceArea(){ 
-    double circle = 2*(radius*radius*M_PI) ;
-    double rec = height*(2*radius*M_PI) ;
+    double circle = 2*M_PI*radius*radius ;
+    double rec = M_PI*height*2*radius ;
     return (circle+rec) ;
 }
 
 double Cylinder :: Volume(){
 
-    return (radius*radius*M_PI*height) ;
+    return (M_PI*radius*radius*height) ;
 }
 
 double Cylinder :: Circumference(){
 
-    return (2*radius*M_PI) ;
+    return (M_PI*2*radius) ;
 }
 
 istream & operator>>(istream & in, Cylinder & cldr)
